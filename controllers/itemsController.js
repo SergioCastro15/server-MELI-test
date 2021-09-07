@@ -28,7 +28,7 @@ exports.getItems = async (req, res, next) => {
                     },
                     "picture": element.thumbnail,
                     "condition": element.condition,
-                    "free_shipping": element.accepts_mercadopago
+                    "free_shipping": element.shipping.free_shipping
                 }]
             }
         });
